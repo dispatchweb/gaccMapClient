@@ -4,6 +4,6 @@
  git pull origin master       
 #npm install --production       
 yarn install --production=true
- pm2 restart app
+ pm2 restart server
  exit       
 EOF

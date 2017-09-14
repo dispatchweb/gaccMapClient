@@ -1,0 +1,9 @@
+-#!/bin/sh      
+#ssh userName@development-server-ip <<EOF        
+#cd /your-project-path  
+ git pull origin master       
+#npm install --production       
+yarn install --production=true
+ pm2 restart app
+ exit       
+EOF

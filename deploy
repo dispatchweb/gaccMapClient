@@ -1,5 +1,5 @@
 #!/bin/sh      
-#permissions must include executable: sudo chmod +x deploy
+#permissions must include executable => sudo chmod +x deploy
 ssh useradmin@165.227.63.240 <<EOF        
 	cd ~/apps/gaccMapClient
 	#sudo chown -R useradmin .

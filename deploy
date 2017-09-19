@@ -1,9 +1,10 @@
--#!/bin/sh      
-#ssh userName@development-server-ip <<EOF        
-#cd /your-project-path  
- git pull origin master       
-#npm install --production       
-yarn install --production=true
- pm2 restart server
- exit       
+#!/bin/sh      
+ssh useradmin@165.227.63.240 <<EOF        
+	cd ~/apps/gaccMapClient
+	#sudo chown -R useradmin .
+	#git pull origin master       
+	#npm install --production       
+	#yarn install --production=true
+	#pm2 restart server.js
+	exit       
 EOF

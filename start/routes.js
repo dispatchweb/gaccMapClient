@@ -14,7 +14,7 @@
 
 const Route = use('Route')
 
-Route.get('/:id', ({ params }) => {
+Route.get('/prod/:id', ({ params }) => {
   const id = params.id;
   return `
 <!DOCTYPE html>
@@ -25,8 +25,11 @@ Route.get('/:id', ({ params }) => {
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
 <link rel="icon" href="https://www.esri.com/favicon.ico">
 <title>Fire Activity</title>
-<link rel="stylesheet" href="css/calcite-maps-bootstrap.min-v0.4.css">
-<link rel="stylesheet" href="css/calcite-maps-arcgis-4.x.min-v0.4.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/fonts/glyphicons-halflings-regular.ttf" rel="application/font-woff">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/fonts/glyphicons-halflings-regular.woff" rel="application/font-woff">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/fonts/glyphicons-halflings-regular.woff2" rel="application/font-woff">
+<link rel="stylesheet" href="https://dispatchweb.us/css/calcite-maps-bootstrap.min-v0.4.css">
+<link rel="stylesheet" href="https://dispatchweb.us/css/calcite-maps-arcgis-4.x.min-v0.4.css">
 <link rel="stylesheet" href="https://js.arcgis.com/4.4/esri/css/main.css">
 <style>
 html, body {
@@ -64,8 +67,8 @@ html, body {
   <!-- Title -->
   <div class="calcite-title calcite-overflow-hidden">
     <span class="calcite-title-main">
-      <!-- <img src="./images/${id}.png" style="width:60px;height:40px;"> -->
-      <img src="./images/${id}.png" style="width:56.25px;height:45px;">
+      <!-- <img src="https://dispatchweb.us/images/${id}.png" style="width:60px;height:40px;"> -->
+      <img src="https://dispatchweb.us/images/${id}.png" style="width:56.25px;height:45px;">
     </span>
     <span class="calcite-title-divider hidden-xs"></span>
     <span class="calcite-title-sub hidden-xs">Current Fire Activity</span> 
@@ -206,7 +209,7 @@ var dojoConfig = {
 <!-- ArcGIS JS 4 -->
 <script src="https://js.arcgis.com/4.4/"></script>
 
-<script src='./js/script.js'></script>
+<script src='https://dispatchweb.us/js/script.js'></script>
 
 </body>
 </html>

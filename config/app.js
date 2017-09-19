@@ -54,7 +54,7 @@ module.exports = {
     | virk.cheatsheet.adonisjs.com - offset - 3
     |
     */
-    subdomainOffset: 2,
+    subdomainOffset: 3,
 
     /*
     |--------------------------------------------------------------------------
@@ -95,7 +95,7 @@ module.exports = {
     | ignore, deny, allow
     |
     */
-    dotfiles: 'ignore',
+    dotfiles: 'allow',
 
     /*
     |--------------------------------------------------------------------------

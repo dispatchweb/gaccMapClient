@@ -4,6 +4,7 @@
 ssh useradmin@165.227.63.240 <<EOF        
 	cd ~/apps/gaccMapClient
 	#sudo chown -R useradmin .
+  # here's a change
 	git pull origin master       
 	yarn install --production=true
 	pm2 stop server
